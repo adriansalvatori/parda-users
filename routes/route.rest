@@ -1,0 +1,38 @@
+GET http://localhost:3000/users
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+###
+
+GET http://localhost:3000/users/5fa33b1d8bc92e39a4fa1c8d
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+{
+    "name": "Michael Pulido",
+    "email": "mpulidob@gmail.com",
+    "phone": "3195980226",
+    "country": "Bogotá DC",
+    "occupation": "CEO Movidagráfica SAS",
+    "password": "123456"
+}
+
+###
+
+DELETE http://localhost:3000/users/5fa33b1d8bc92e39a4fa1c8d
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+###
+
+PATCH http://localhost:3000/users/5fa3343f3804000794ecfd78
+Content-Type: application/json
+Authorization: ed607a90e24ddb6a722babf5e21edc67
+
+{
+    "name" : "Michael Steven Pulido"
+}
